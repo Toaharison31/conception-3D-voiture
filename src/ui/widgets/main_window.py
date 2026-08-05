@@ -1,6 +1,7 @@
 import customtkinter as ctk
 from src import config
-from src.ui.widgets.actions import bouton_phares_action, bouton_portes_action, slider_ior_action, slider_opacity_vitre_action, bouton_voiture_action
+from src.ui.widgets.actions import bouton_phares_action, bouton_portes_action, slider_ior_action, \
+    slider_opacity_vitre_action, bouton_voiture_action, slider_braquer_roues_action
 
 
 class MainWindow(ctk.CTk):
@@ -89,6 +90,17 @@ class MainWindow(ctk.CTk):
             padx=15,
             pady=15
         )
+        # slider braquer roues
+        self.slider_braquer_roues = ctk.CTkSlider(
+            self,
+            fg_color="#CEC7C7",
+            from_=-35,
+            to=35,
+            number_of_steps=30,
+            command=slider_braquer_roues_action
+        )
+        self.slider_braquer_roues.set(0)
+        self.slider_braquer_roues.pack(side="top", anchor="w", padx=20, pady=(20, 20))
 
         # bouton de lancement
         self.ok = ctk.CTkButton(

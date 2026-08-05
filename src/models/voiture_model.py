@@ -76,7 +76,7 @@ class Vehicule3D(VehiculeModel):
         self.phares_allumes = est_allume
         return self
 
-    # tsy vita
+    # vita
     def set_braquer_roues(self, angle: float):
         self.angle_braquage = max(-35.0, min(35.0, angle))
         return self
@@ -93,4 +93,5 @@ class Vehicule3D(VehiculeModel):
             f"IOR: {self.ior}\n"
             f"Portes: {self.portes_ouvertes}\n"
             f"Phares: {self.phares_allumes}\n"
+            f"Braquage: {self.angle_braquage}"
         )

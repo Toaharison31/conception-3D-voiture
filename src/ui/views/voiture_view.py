@@ -57,7 +57,7 @@ def phares_allumes_view(valeur: bool):
     get_est_allume = valeur
     return voiture.set_phares_allumes(get_est_allume)
 
-# tsy vita
+# vita
 def braquer_roues_view(valeur):
     angle = valeur
     return voiture.set_braquer_roues(angle)

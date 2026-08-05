@@ -11,6 +11,7 @@ def bouton_voiture_action():
     else:
         est_lance = False
 
+# apparences
 
 # apparences opacity vitre
 def slider_opacity_vitre_action(sld_opacity):
@@ -48,3 +49,10 @@ def bouton_portes_action(btn_portes):
 
     # print("Portes: ", est_ouverte) # anaovana test fa fafana après
 
+
+# apparences braquage
+def slider_braquer_roues_action(sld_braquage):
+    braquage = round(sld_braquage, 2)
+    braquer_roues_view(braquage)
+
+    # print("Braquage", braquage)
