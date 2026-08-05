@@ -61,3 +61,4 @@ def phares_allumes_view(valeur: bool):
 def braquer_roues_view(valeur):
     angle = valeur
     return voiture.set_braquer_roues(angle)
+

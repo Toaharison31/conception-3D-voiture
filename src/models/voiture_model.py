@@ -83,11 +83,14 @@ class Vehicule3D(VehiculeModel):
 
     def __str__(self):
         return (
-            f"{self.marque} {self.couleur}: "
-            f"({self.longueur} x {self.largeur} x {self.hauteur}) "
-            f"| Polycount: {self.topologie} tris.\n"
+            f"Voiture {self.marque} {self.couleur}\n"
+            f"Dimensions: ({self.longueur} x {self.largeur} x {self.hauteur} x {self.empattement})\n"
+            f"Garde au sol: {self.garde_au_sol}\n"
+            f"Epaisseur coque: {self.epaisseur_coque}\n"
+            f"Polycount: {self.topologie} tris.\n"
+            f"Carrosserie: ({self.roughness} x {self.metallic} x {self.clearcoat})\n"
             f"Opacity: {self.opacity_vitre}\n"
             f"IOR: {self.ior}\n"
-            f"Portes ouvertes: {self.portes_ouvertes}\n"
-            f"Phares allumes: {self.phares_allumes}\n"
+            f"Portes: {self.portes_ouvertes}\n"
+            f"Phares: {self.phares_allumes}\n"
         )

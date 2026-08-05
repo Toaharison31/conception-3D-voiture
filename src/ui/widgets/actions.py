@@ -1,7 +1,7 @@
 from src.ui.views.voiture_view import *
 
 """LES AUTRES"""
-# validation
+# lancement
 est_lance = False
 def bouton_voiture_action():
     global est_lance
