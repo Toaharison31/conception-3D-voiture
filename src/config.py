@@ -8,7 +8,7 @@ ASSETS_DIR = PROJECT_ROOT / "assets"
 ICONS_DIR = PROJECT_ROOT / "icons"
 IMAGE_DIR = PROJECT_ROOT / "images"
 
-APP_NAME = "C3DV"
+APP_NAME = "c.3D.v"
 APP_VERSION = "0.1.0"
 APP_AUTHOR = ""
 
