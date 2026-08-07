@@ -119,6 +119,7 @@ class MainWindow(ctk.CTk):
             number_of_steps=3,
             command=slider_garde_au_sol_action
         )
+        self.slider_garde_au_sol.set(0)
         self.slider_garde_au_sol.pack(side="top", anchor="w", padx=6, pady=(6, 6))
 
         # slider epaisseur coque
@@ -129,6 +130,7 @@ class MainWindow(ctk.CTk):
             number_of_steps=3,
             command=slider_epaisseur_coque_action
         )
+        self.slider_epaiseur_coque.set(0)
         self.slider_epaiseur_coque.pack(side="top", anchor="w", padx=6, pady=(6, 6))
 
         # slider topologie
@@ -139,6 +141,7 @@ class MainWindow(ctk.CTk):
             number_of_steps=3,
             command=slider_topologie_action
         )
+        self.slider_topologie.set(0)
         self.slider_topologie.pack(side="top", anchor="w", padx=6, pady=(6, 6))
 
         # entry pbr_carrosserie roughness
