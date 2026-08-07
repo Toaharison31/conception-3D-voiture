@@ -7,6 +7,3 @@ class MainController:
     def start(self):
         self.main_window.mainloop()
 
-    def on_click_start(self):
-        print("starting")
-
